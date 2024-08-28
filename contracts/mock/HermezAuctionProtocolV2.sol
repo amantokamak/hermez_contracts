@@ -814,10 +814,10 @@ contract HermezAuctionProtocolV2 is
             msg.sender == hermezRollup,
             "HermezAuctionProtocol::forge: ONLY_HERMEZ_ROLLUP"
         );
-        require(
-            _canForge(forger, block.number),
-            "HermezAuctionProtocol::forge: CANNOT_FORGE"
-        );
+        // require(
+        //     _canForge(forger, block.number),
+        //     "HermezAuctionProtocol::forge: CANNOT_FORGE"
+        // );
         uint128 slotToForge = getCurrentSlotNumber();
 
         if (!slots[slotToForge].forgerCommitment) {

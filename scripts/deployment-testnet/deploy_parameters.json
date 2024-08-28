@@ -90,5 +90,57 @@
     ],
     "tokens": []
   },
+  "55007": {
+    "libVerifiersAddress": [],
+    "libposeidonsAddress": [],
+    "libVerifiersWithdrawAddress": "",
+    "hermezGovernanceAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "emergencyCouncilAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "donationAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "bootCoordinatorAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "genesisBlock": "",
+    "genesisBlockOffsetCurrent": 3,
+    "feeAddToken": 10,
+    "forgeL1L2BatchTimeout": 10,
+    "withdrawalDelayHermez": 1209600,
+    "initialWithdrawalDelay": 3600,
+    "bootCoordinatorURL": "http://localhost:8086",
+    "maxTxVerifier": [
+      512, 400, 2048
+    ],
+    "nLevelsVerifer": [
+      32, 32, 32
+    ],
+    "verifierType": [ 
+      "mock", "real", "real"
+    ],
+    "tokens": []
+  },
+  "97": {
+    "libVerifiersAddress": [],
+    "libposeidonsAddress": [],
+    "libVerifiersWithdrawAddress": "",
+    "hermezGovernanceAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "emergencyCouncilAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "donationAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "bootCoordinatorAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+    "genesisBlock": "",
+    "genesisBlockOffsetCurrent": 3,
+    "feeAddToken": 10,
+    "forgeL1L2BatchTimeout": 10,
+    "withdrawalDelayHermez": 1209600,
+    "initialWithdrawalDelay": 3600,
+    "bootCoordinatorURL": "http://localhost:8086",
+    "maxTxVerifier": [
+      512, 400, 2048
+    ],
+    "nLevelsVerifer": [
+      32, 32, 32
+    ],
+    "verifierType": [ 
+      "mock", "real", "real"
+    ],
+    "tokens": []
+  },
   "pathOutputJson": ""
 }

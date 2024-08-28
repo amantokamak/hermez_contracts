@@ -11,7 +11,7 @@ require("hardhat-spdx-license-identifier");
 require("@openzeppelin/hardhat-upgrades");
 
 const DEFAULT_MNEMONIC =
-  "explain tackle mirror kit van hammer degree position ginger unfair soup bonus";
+  "";
 
 module.exports = {
   defaultNetwork: "hardhat",
@@ -20,34 +20,6 @@ module.exports = {
       blockGasLimit: 12500000,
       allowUnlimitedContractSize: true,
     },
-    mainnet: {
-      url: `https://mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
-      accounts: {
-        mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 20,
-      },
-    },
-    localhostMnemonic: {
-      url: "http://127.0.0.1:8545",
-      accounts: {
-        mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 20,
-      },
-    },
-    ganache: {
-      url: "http://localhost:8565",
-      accounts: {
-        mnemonic:
-          "dismiss similar fury minute fantasy boy deputy there taxi salmon body later",
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 20,
-      },
-    },
     reporter: {
       gas: 5000000,
       url: "http://localhost:8545",
@@ -55,8 +27,8 @@ module.exports = {
     coverage: {
       url: "http://localhost:8555",
     },
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+    titan_sepolia: {
+      url: `https://rpc.titan-sepolia.tokamak.network`,
       accounts: {
         mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
         path: "m/44'/60'/0'/0",
@@ -64,17 +36,8 @@ module.exports = {
         count: 20,
       },
     },
-    goerli: {
-      url: `https://goerli.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
-      accounts: {
-        mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 20,
-      },
-    },
-    ropsten: {
-      url: `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+    bsc_testnet: {
+      url: `https://bsc-testnet.core.chainstack.com/0b64d77a9230f4c28ada3aa4966f41c7/`,
       accounts: {
         mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
         path: "m/44'/60'/0'/0",
@@ -84,12 +47,20 @@ module.exports = {
     },
   },
   etherscan: {
-    // The url for the Etherscan API you want to use.
-    // For example, here we're using the one for the Ropsten test network
-    //url: "https://api-rinkeby.etherscan.io/api",
-    // Your API key for Etherscan
-    // Obtain one at https://etherscan.io/
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: {
+      titan_sepolia: "abcd",
+      bscTestnet: "abcd",
+    },
+    customChains: [
+      {
+        network: "titan_sepolia",
+        chainId: 55007,
+        urls: {
+            apiURL: "https://explorer.titan-sepolia.tokamak.network/api",
+            browserURL: "https://explorer.titan-sepolia.tokamak.network/",
+        },
+    }
+    ]
   },
   solidity: {
     version: "0.6.12",

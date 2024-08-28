@@ -1,0 +1,17 @@
+{
+ "hermezAuctionProtocolAddress": "0x14DB65Efa498B0609A4a8Bb29a7c826367876c32",
+ "hermezAddress": "0xA3d61e1e80aA100ee43772A14b651cB678d87A8F",
+ "withdrawalDelayeAddress": "0xA5879b35B7da2Ec3Af56c9B71396FDcF4156C937",
+ "HEZTokenAddress": "0x292541bFDE71eCCa5C23aBe1e5bB110a231391E4",
+ "hermezGovernanceAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+ "emergencyCouncilAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+ "donationAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+ "bootCoordinatorAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+ "communitCouncilAddress": "0x708e963030ba43B3118bd65f11c00dB5400f77ED",
+ "libVerifiersAddress": [
+  "0xcf60250aF54547Ae684CAdF0C1850c0BbCc33C8D",
+  "0xda4c15492e2D3C51522Dd75eAfB208cA73406cc9",
+  "0xeca9a2113B1a21c051F2d2CE88d0E4f4E992D48F"
+ ],
+ "libverifiersWithdrawAddress": "0xc1dd876a2b5BfF5f957Bb720133c6F70cd0bAa1E"
+}

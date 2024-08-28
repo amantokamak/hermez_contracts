@@ -311,10 +311,10 @@ contract Hermez is InstantWithdrawManager {
         );
 
         // ask the auction if this coordinator is allow to forge
-        require(
-            hermezAuctionContract.canForge(msg.sender, block.number) == true,
-            "Hermez::forgeBatch: AUCTION_DENIED"
-        );
+        // require(
+        //     hermezAuctionContract.canForge(msg.sender, block.number) == true,
+        //     "Hermez::forgeBatch: AUCTION_DENIED"
+        // );
 
         if (!l1Batch) {
             require(

@@ -90,7 +90,7 @@ async function main() {
   );
   
   const VerifierWithdrawHelper = await ethers.getContractFactory(
-    "VerifierWithdraw"
+    "VerifierWithdrawHelper"
   );
 
   const HermezGovernance = await ethers.getContractFactory(

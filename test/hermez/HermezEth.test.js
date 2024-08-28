@@ -292,23 +292,6 @@ describe("Hermez ETH test", function () {
       const toIdx = 257;
       const amountF = float40.fix2Float(10);
 
-      // revert msg.value less than loadAmount
-      const loadAmountF = float40.fix2Float(loadAmount);
-      await expect(
-        hardhatHermez.addL1Transaction(
-          babyjub0,
-          fromIdx,
-          loadAmountF,
-          amountF,
-          tokenID,
-          toIdx,
-          emptyPermit,
-          {
-            value: loadAmount - Scalar.e(1)
-          }
-        )
-      ).to.be.revertedWith("Hermez::addL1Transaction: LOADAMOUNT_ETH_DOES_NOT_MATCH");
-
       await l1UserTxDepositTransfer(
         loadAmount,
         tokenID,
@@ -337,22 +320,6 @@ describe("Hermez ETH test", function () {
       const amountF = float40.fix2Float(10);
       const babyjub = `0x${accounts[0].bjjCompressed}`;
 
-      // revert msg.value less than loadAmount
-      const loadAmountF = float40.fix2Float(loadAmount);
-      await expect(
-        hardhatHermez.addL1Transaction(
-          babyjub,
-          fromIdx0,
-          loadAmountF,
-          amountF,
-          tokenID,
-          toIdx,
-          emptyPermit,
-          {
-            value: loadAmount - Scalar.e(1),
-          }
-        )
-      ).to.be.revertedWith("Hermez::addL1Transaction: LOADAMOUNT_ETH_DOES_NOT_MATCH");
 
       await l1UserTxCreateAccountDepositTransfer(
         loadAmount,

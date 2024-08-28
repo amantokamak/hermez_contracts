@@ -1,3 +1,12 @@
+## Remixd
+remixd -s ../hermez\ contracts -u https://remix.ethereum.org  
+
+## deploy/verify test net
+npx hardhat run --network titan_sepolia scripts/deployment-testnet/deploy.js 
+npx hardhat run --network titan_sepolia scripts/deployment-testnet/verifyContracts.js
+
+npx hardhat --network titan_sepolia verify 0x18cD995f4B19e79aefC67364677d8C3c4ae5555A
+
 # Smart-contracts
 
 Implements Hermez smart contracts
